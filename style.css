@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap");
+
+html,
+body {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100vh;
+   overflow: hidden;
+   font-family: "Cormorant", serif;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+img {
+   width: 100%;
+   height: 100%;
+   max-width: 100%;
+   /* object-fit: cover; */
+}
+
+.menu {
+   width: 80%;
+   height: 100px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   text-transform: uppercase;
+}
+
+.menu-center {
+   text-align: center;
+}
+
+.menu-right {
+   font-size: 30px;
+}
+
+/* hero img  */
+
+.wrapper-img {
+   overflow: hidden;
+   position: relative;
+   top: 50% !important;
+   left: 50%;
+   transform: translate(-50%, 0%);
+   width: 30%;
+   height: 90vh;
+}
+
+.box {
+   background: white;
+   opacity: 1;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   z-index: 2;
+}
+
+.header {
+   position: absolute;
+   top: 45%;
+   left: 20%;
+   transform: translate(-50%, -50%);
+}
+
+.header h1 {
+   font-size: 90px;
+   padding: 10px 0;
+   margin: 0;
+   mix-blend-mode: overlay;
+}
+.stoke-effect {
+   color: white;
+   -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+.header-1 .letter {
+   display: inline-block;
+   line-height: 1em;
+}
+.header-2 .letter {
+   display: inline-block;
+   line-height: 1em;
+}
+
+.sidebar-text {
+   position: absolute;
+   top: 20%;
+   right: 7%;
+   transform: translate(-50%, -50%);
+   font-size: 40px;
+   color: transparent;
+   -webkit-text-stroke: 2px rgb(165, 165, 165);
+}
+
+.projects {
+   font-size: 1.5em;
+   position: absolute;
+   bottom: 10%;
+   left: 10%;
+}
+
+.img-nav {
+   position: absolute;
+   right: 13%;
+   bottom: 13%;
+   font-size: 20px;
+   transform: translate(-50%, -50%);
+   text-transform: uppercase;
+}
+
+.next {
+   position: relative;
+   left: 60px;
+}
+
+/* loader  */
+
+.wrapper {
+   position: fixed;
+   width: 100%;
+   height: 100vh;
+   background: #000;
+   z-index: 2;
+}
+
+.loader {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 8%;
+   height: 20vh;
+   background: #fff;
+   z-index: 2;
+}
+.hide {
+   display: none;
+}
+.brand-logo {
+   width: 60px;
+   transform: translateX(-20%);
+}
+/* media queries  */
+
+@media (max-width: 900px) {
+   .wrapper-img {
+      width: 90%;
+   }
+   .hero-container {
+      color: white;
+   }
+   .header {
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      color: white;
+   }
+
+   .header h1 {
+      font-size: 50px;
+   }
+
+   .projects {
+      font-size: 2em;
+      top: 85%;
+      /* left: 50%; */
+      text-align: center;
+      color: rgb(255, 255, 255);
+      /* -webkit-text-stroke: 1px black; */
+   }
+   .sidebar-text,
+   .img-nav {
+      display: none;
+   }
+}
